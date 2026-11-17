@@ -1,0 +1,18 @@
+/etc/freeswitch/autoload_configs/xml_curl.conf.xml
+
+  <configuration name="xml_curl.conf" description="XML Gateway">
+  <bindings>
+    <binding name="sip-gateway-register">
+      <param name="gateway-url" value="https://pbx.registercamp.com/freeswitch/fs_gateways.php"/>
+      <param name="bindings" value="configuration"/>
+    </binding>
+    <binding name="sip-extension-directory">
+      <param name="gateway-url" value="https://pbx.registercamp.com/freeswitch/extenson.php"/>
+      <param name="bindings" value="directory"/>
+    </binding>
+    <binding name="sip-dialplan-routing">
+      <param name="gateway-url" value="https://pbx.registercamp.com/freeswitch/Inbound-Outbound.php"/>
+      <param name="bindings" value="dialplan"/>
+    </binding>
+  </bindings>
+</configuration>
